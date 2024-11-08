@@ -1,7 +1,3 @@
-Certainly! Below is an example of a `README.md` file for your notebook.
-
----
-
 # Airbnb Analysis Notebook
 
 This Jupyter notebook contains a comprehensive data analysis pipeline designed to clean, visualize, and analyze a dataset. The goal is to extract meaningful insights, identify trends, and perform statistical analyses.
