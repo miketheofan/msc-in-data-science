@@ -1,0 +1,11 @@
+data_archive_20190201.json file structure:
+
+trackId: spotify track Id
+artists: song artisits
+songTitle: song title
+features: a vector of extracted BMRI features
+activityType: the activity associated with the song (among the 14 activities)
+clusteringLabel: the clustering label associated with the song (among the 3 high-level groups: calm, vibrant, intense)
+spotifyTrackURL: spotify track URL
+youtubeURL: youtube URL
+youtubeId: youtube ID
