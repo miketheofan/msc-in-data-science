@@ -19,8 +19,8 @@ public class Driver {
         Job job = Job.getInstance(configuration, "Word Count");
 
         // set job parameters
-        job.setJarByClass(WordCount.class);
-        job.setMapperClass(WordCount.CountMapper.class);
+        job.setJarByClass(CarSales.class);
+        job.setMapperClass(CarSales.CountMapper.class);
 
         // Set the data types for the output key-value pairs
         job.setOutputKeyClass(Text.class);
@@ -37,7 +37,7 @@ public class Driver {
          */
     //        job.setCombinerClass(WordCount.CountReducer.class);
 
-        job.setReducerClass(WordCount.CountReducer.class);
+        job.setReducerClass(CarSales.CountReducer.class);
 
         // set io paths
         FileOutputFormat.setOutputPath(job, new Path("/user/hdfs/output/"));

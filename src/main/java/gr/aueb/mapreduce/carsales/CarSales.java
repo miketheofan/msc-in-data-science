@@ -7,7 +7,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 
-public class WordCount {
+public class CarSales {
     public static class CountMapper extends Mapper<LongWritable, Text, Text, Text> {
         @Override
         public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
