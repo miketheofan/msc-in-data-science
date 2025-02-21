@@ -1,4 +1,4 @@
-gr/aueb/mapreduce/carsales/WordCount$CountMapper.class
+gr/aueb/mapreduce/carsales/CarSales$CountMapper.class
+gr/aueb/mapreduce/carsales/CarSales$CountReducer.class
 gr/aueb/mapreduce/carsales/Driver.class
-gr/aueb/mapreduce/carsales/WordCount.class
-gr/aueb/mapreduce/carsales/WordCount$CountReducer.class
+gr/aueb/mapreduce/carsales/CarSales.class
