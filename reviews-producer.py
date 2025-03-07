@@ -2,9 +2,7 @@ import pandas as pd
 import json
 import asyncio
 import random
-
 from aiokafka import AIOKafkaProducer
-
 from faker import Faker
 
 topic = 'test'
@@ -29,6 +27,9 @@ async def produce(names, movies):
         compression_type="gzip")
     
     try:
+      
+      id = 0
+
       while True:
         await producer.start()
 
@@ -37,9 +38,11 @@ async def produce(names, movies):
         date = fake.date_time_this_decade().strftime('%Y-%m-%d %H:%M:%S')
         rating = random.randint(1, 10)
 
-        data = {"name": name, "movie": movie, "current_time": date, "rating": rating}
+        data = {"id": id, "name": name, "movie": movie, "date": date, "rating": rating}
         await producer.send(topic, data)
         print(f"Sent: {data}")
+
+        id += 1
         
         await asyncio.sleep(10)
     except KeyboardInterrupt:
@@ -54,6 +57,8 @@ fake = Faker()
 movies_df = pd.read_csv('./data/movies.csv')
 movies = movies_df.iloc[:, 0].tolist()
 names = init_names()
+
+id = 0
 
 loop = asyncio.get_event_loop()
 result = loop.run_until_complete(produce(names, movies))
