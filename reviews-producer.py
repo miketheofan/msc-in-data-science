@@ -4,22 +4,23 @@ import asyncio
 import random
 from aiokafka import AIOKafkaProducer
 from faker import Faker
+from datetime import datetime
 
 topic = 'test'
 
 def serializer(value):
     return json.dumps(value).encode()
 
-def init_names():
+def init_names(no_names=10):
     names = []
 
-    for _ in range(10):
+    for _ in range(no_names):
         names.append(fake.name())
     names.append('Michail Theofanopoulos')
 
     return names
 
-async def produce(names, movies):
+async def produce(names, movies, processing_interval=30):
     
     producer = AIOKafkaProducer(
         bootstrap_servers='localhost:29092',
@@ -28,23 +29,19 @@ async def produce(names, movies):
     
     try:
       
-      id = 0
-
       while True:
         await producer.start()
 
         name = random.choice(names)
         movie = random.choice(movies)
-        date = fake.date_time_this_decade().strftime('%Y-%m-%d %H:%M:%S')
+        date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         rating = random.randint(1, 10)
 
-        data = {"id": id, "name": name, "movie": movie, "date": date, "rating": rating}
+        data = {"name": name, "movie": movie, "date": date, "rating": rating}
         await producer.send(topic, data)
         print(f"Sent: {data}")
-
-        id += 1
         
-        await asyncio.sleep(10)
+        await asyncio.sleep(processing_interval)
     except KeyboardInterrupt:
         pass
     finally:
@@ -54,11 +51,12 @@ async def produce(names, movies):
 # Create a Faker instance
 fake = Faker()
 
+no_names = 50
+processing_interval = 10
+
 movies_df = pd.read_csv('./data/movies.csv')
 movies = movies_df.iloc[:, 0].tolist()
-names = init_names()
-
-id = 0
+names = init_names(no_names)
 
 loop = asyncio.get_event_loop()
-result = loop.run_until_complete(produce(names, movies))
+result = loop.run_until_complete(produce(names, movies, processing_interval))

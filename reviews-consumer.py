@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType,StructField,StringType,IntegerType
-from pyspark.sql.functions import split,from_json,col, monotonically_increasing_id, to_timestamp
+from pyspark.sql.functions import from_json,col, to_timestamp, date_format
 
 spark = SparkSession \
     .builder \
@@ -10,12 +10,10 @@ spark = SparkSession \
 spark.sparkContext.setLogLevel("ERROR")
 
 reviewsSchema = StructType([
-                StructField("id", IntegerType(),False),
                 StructField("name", StringType(),False),
                 StructField("movie", StringType(),False),
                 StructField("date", StringType(),False),
-                StructField("rating", IntegerType(),False)
-            ])
+                StructField("rating", IntegerType(),False)])
 
 df = spark \
   .readStream \
@@ -28,10 +26,14 @@ df = spark \
 sdf = df.selectExpr("CAST(value AS STRING)") \
   .select(from_json(col("value"), reviewsSchema).alias("data")) \
   .select("data.*") \
-  .withColumn("date", to_timestamp(col("date"), "yyyy-MM-dd HH:mm:ss"))
+  .withColumn("date", date_format(to_timestamp(col("date")), "yyyy-MM-dd HH:mm:ss"))
+
 
 def writeToCassandra(writeDF, _):
   writeDF.write.format("org.apache.spark.sql.cassandra").mode('append').options(table="records", keyspace="reviews").save()
+
+# Process interval in seconds
+processing_interval = 30 
 
 result = None
 while result is None:
@@ -40,9 +42,11 @@ while result is None:
     result = sdf.writeStream.option("spark.cassandra.connection.host","localhost:9042") \
       .foreachBatch(writeToCassandra) \
       .outputMode("update") \
-      .trigger(processingTime='30 seconds') \
+      .trigger(processingTime=f"{processing_interval} seconds") \
       .start() \
       .awaitAnyTermination()
+  except KeyboardInterrupt:
+    result.stop()
+    break
   except:
     pass
-  
