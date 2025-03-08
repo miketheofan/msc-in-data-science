@@ -52,7 +52,7 @@ async def produce(names, movies, processing_interval=30):
 fake = Faker()
 
 no_names = 50
-processing_interval = 10
+processing_interval = 50
 
 movies_df = pd.read_csv('./data/movies.csv')
 movies = movies_df.iloc[:, 0].tolist()
