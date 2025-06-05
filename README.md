@@ -1,1 +1,1 @@
-# lighting-optjmization-assignment
+# lighting-optimization-assignment
