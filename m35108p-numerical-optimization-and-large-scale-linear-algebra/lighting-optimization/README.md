@@ -1,0 +1,1 @@
+# lighting-optimization-assignment
