@@ -240,3 +240,234 @@ Training multiple model variants...
 2025-10-30 15:59:59 | steam_predictions         | INFO     | Generated 2 counterfactuals
 2025-10-30 15:59:59 | steam_predictions         | INFO     | Generating anchor explanation
 2025-10-30 15:59:59 | steam_predictions         | INFO     | Anchor found with precision 99.0%
+2025-10-30 18:23:46 | steam_predictions         | INFO     | Comparing 5 models
+2025-10-30 18:23:46 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:23:46 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:23:46 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:23:46 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:23:46 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:23:46 | steam_predictions         | INFO     | Using provided model: LogisticRegression
+2025-10-30 18:23:46 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:23:47 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:23:47 | steam_predictions         | INFO     | Logistic Regression: Accuracy=0.8192, AUC-ROC=0.8667, Time=0.33s
+2025-10-30 18:23:47 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:23:47 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:23:47 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:23:47 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:23:47 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:23:47 | steam_predictions         | INFO     | Using provided model: RandomForestClassifier
+2025-10-30 18:23:47 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:23:52 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:23:52 | steam_predictions         | INFO     | Random Forest: Accuracy=0.8104, AUC-ROC=0.8660, Time=4.78s
+2025-10-30 18:23:52 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:23:52 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:23:52 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:23:52 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:23:52 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:23:52 | steam_predictions         | INFO     | Using provided model: XGBClassifier
+2025-10-30 18:23:52 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:23:52 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:23:53 | steam_predictions         | INFO     | XGBoost: Accuracy=0.8207, AUC-ROC=0.8775, Time=0.63s
+2025-10-30 18:23:53 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:23:53 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:23:53 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:23:53 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:23:53 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:23:53 | steam_predictions         | INFO     | Using provided model: GradientBoostingClassifier
+2025-10-30 18:23:53 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:23:55 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:23:55 | steam_predictions         | INFO     | Gradient Boosting: Accuracy=0.8196, AUC-ROC=0.8707, Time=2.54s
+2025-10-30 18:23:55 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:23:55 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:23:55 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:23:55 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:23:55 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:23:55 | steam_predictions         | INFO     | Using provided model: SVC
+2025-10-30 18:23:55 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:24:37 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:24:40 | steam_predictions         | INFO     | SVM: Accuracy=0.8233, AUC-ROC=0.8736, Time=41.77s
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Comparing 5 models
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Using provided model: LogisticRegression
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Logistic Regression: Accuracy=0.8192, AUC-ROC=0.8667, Time=0.33s
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Using provided model: RandomForestClassifier
+2025-10-30 18:26:40 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:26:45 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:26:45 | steam_predictions         | INFO     | Random Forest: Accuracy=0.8104, AUC-ROC=0.8660, Time=4.64s
+2025-10-30 18:26:45 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:26:45 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:26:45 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:26:45 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:26:45 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:26:45 | steam_predictions         | INFO     | Using provided model: XGBClassifier
+2025-10-30 18:26:45 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:26:46 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:26:46 | steam_predictions         | INFO     | XGBoost: Accuracy=0.8207, AUC-ROC=0.8775, Time=0.63s
+2025-10-30 18:26:46 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:26:46 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:26:46 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:26:46 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:26:46 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:26:46 | steam_predictions         | INFO     | Using provided model: GradientBoostingClassifier
+2025-10-30 18:26:46 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:26:48 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:26:48 | steam_predictions         | INFO     | Gradient Boosting: Accuracy=0.8196, AUC-ROC=0.8707, Time=2.58s
+2025-10-30 18:26:48 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:26:48 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:26:48 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:26:48 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:26:48 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:26:48 | steam_predictions         | INFO     | Using provided model: SVC
+2025-10-30 18:26:48 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:27:30 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:27:33 | steam_predictions         | INFO     | SVM: Accuracy=0.8233, AUC-ROC=0.8736, Time=41.90s
+2025-10-30 18:27:34 | steam_predictions         | INFO     | Best model: SVM with accuracy 0.8233
+2025-10-30 18:33:07 | steam_predictions         | INFO     | Comparing 5 models
+2025-10-30 18:33:07 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:33:07 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:33:07 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:33:07 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:33:07 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:33:07 | steam_predictions         | INFO     | Using provided model: LogisticRegression
+2025-10-30 18:33:07 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:33:08 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:33:08 | steam_predictions         | INFO     | Logistic Regression: Accuracy=0.8192, AUC-ROC=0.8667, Time=0.33s
+2025-10-30 18:33:08 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:33:08 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:33:08 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:33:08 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:33:08 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:33:08 | steam_predictions         | INFO     | Using provided model: RandomForestClassifier
+2025-10-30 18:33:08 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:33:13 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:33:13 | steam_predictions         | INFO     | Random Forest: Accuracy=0.8104, AUC-ROC=0.8660, Time=4.79s
+2025-10-30 18:33:13 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:33:13 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:33:13 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:33:13 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:33:13 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:33:13 | steam_predictions         | INFO     | Using provided model: XGBClassifier
+2025-10-30 18:33:13 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:33:14 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:33:14 | steam_predictions         | INFO     | XGBoost: Accuracy=0.8207, AUC-ROC=0.8775, Time=0.63s
+2025-10-30 18:33:14 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:33:14 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:33:14 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:33:14 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:33:14 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:33:14 | steam_predictions         | INFO     | Using provided model: GradientBoostingClassifier
+2025-10-30 18:33:14 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:33:16 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:33:16 | steam_predictions         | INFO     | Gradient Boosting: Accuracy=0.8196, AUC-ROC=0.8707, Time=2.55s
+2025-10-30 18:33:16 | steam_predictions         | INFO     | Initializing classifier training pipeline
+2025-10-30 18:33:16 | steam_predictions         | INFO     | Numeric features: 6
+2025-10-30 18:33:16 | steam_predictions         | INFO     | Categorical features: 1
+2025-10-30 18:33:16 | steam_predictions         | INFO     | Text features: 2
+2025-10-30 18:33:16 | steam_predictions         | INFO     | Building preprocessing pipeline
+2025-10-30 18:33:16 | steam_predictions         | INFO     | Using provided model: SVC
+2025-10-30 18:33:16 | steam_predictions         | INFO     | Training on 18,160 samples with 9 features
+2025-10-30 18:33:58 | steam_predictions         | INFO     | Model training completed successfully
+2025-10-30 18:34:01 | steam_predictions         | INFO     | SVM: Accuracy=0.8233, AUC-ROC=0.8736, Time=41.65s
+2025-10-30 18:34:01 | steam_predictions         | INFO     | Best model: SVM with accuracy 0.8233
+2025-10-30 18:35:45 | steam_predictions         | INFO     | Loading data from steam_reviews.csv
+2025-10-30 18:35:45 | steam_predictions         | INFO     | Loaded 22,700 reviews with 33 columns
+2025-10-30 18:35:46 | steam_predictions         | INFO     | Starting feature engineering
+2025-10-30 18:35:48 | steam_predictions         | INFO     | Feature engineering complete. Shape: (22700, 7)
+2025-10-30 18:35:57 | steam_predictions         | INFO     | ============================================================
+2025-10-30 18:35:57 | steam_predictions         | INFO     | Starting Model Training Phase
+2025-10-30 18:35:57 | steam_predictions         | INFO     | ============================================================
+2025-10-30 18:35:57 | steam_predictions         | INFO     | Preparing train-test split
+2025-10-30 18:35:57 | steam_predictions         | INFO     | Training set: 18,160 samples
+2025-10-30 18:35:57 | steam_predictions         | INFO     | Test set: 4,540 samples
+2025-10-30 18:35:57 | steam_predictions         | INFO     | Class distribution (train): Positive=12,477 (68.71%), Negative=5,683 (31.29%)
+2025-10-30 18:35:57 | steam_predictions         | INFO     | Training multiple model variants...
+2025-10-30 18:35:57 | steam_predictions         | INFO     | 
+1. Training Logistic Regression...
+2025-10-30 18:35:57 | steam_predictions         | INFO     | Training LogisticRegression on 18,160 samples
+2025-10-30 18:35:57 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:35:57 | steam_predictions         | INFO     | 
+2. Training Random Forest...
+2025-10-30 18:35:57 | steam_predictions         | INFO     | Training RandomForestClassifier on 18,160 samples
+2025-10-30 18:36:01 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:36:01 | steam_predictions         | INFO     | 
+3. Training XGBoost...
+2025-10-30 18:36:01 | steam_predictions         | INFO     | Training XGBClassifier on 18,160 samples
+2025-10-30 18:36:01 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:36:01 | steam_predictions         | INFO     | 
+4. Training SVM...
+2025-10-30 18:36:01 | steam_predictions         | INFO     | Training SVC on 18,160 samples
+2025-10-30 18:36:22 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:36:22 | steam_predictions         | INFO     | 
+5. Training default model...
+2025-10-30 18:36:22 | steam_predictions         | INFO     | Training LogisticRegression on 18,160 samples
+2025-10-30 18:36:22 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:36:22 | steam_predictions         | INFO     | ============================================================
+2025-10-30 18:36:22 | steam_predictions         | INFO     | All models trained successfully
+2025-10-30 18:36:22 | steam_predictions         | INFO     | ============================================================
+2025-10-30 18:39:21 | steam_predictions         | INFO     | Loading data from steam_reviews.csv
+2025-10-30 18:39:21 | steam_predictions         | INFO     | Loaded 22,700 reviews with 33 columns
+2025-10-30 18:39:23 | steam_predictions         | INFO     | Starting feature engineering
+2025-10-30 18:39:24 | steam_predictions         | INFO     | Feature engineering complete. Shape: (22700, 9)
+2025-10-30 18:39:25 | steam_predictions         | INFO     | ============================================================
+2025-10-30 18:39:25 | steam_predictions         | INFO     | Starting Model Training Phase
+2025-10-30 18:39:25 | steam_predictions         | INFO     | ============================================================
+2025-10-30 18:39:25 | steam_predictions         | INFO     | Preparing train-test split
+2025-10-30 18:39:25 | steam_predictions         | INFO     | Training set: 18,160 samples
+2025-10-30 18:39:25 | steam_predictions         | INFO     | Test set: 4,540 samples
+2025-10-30 18:39:25 | steam_predictions         | INFO     | Class distribution (train): Positive=12,477 (68.71%), Negative=5,683 (31.29%)
+2025-10-30 18:39:25 | steam_predictions         | INFO     | Training multiple model variants...
+2025-10-30 18:39:25 | steam_predictions         | INFO     | 
+1. Training Logistic Regression...
+2025-10-30 18:39:25 | steam_predictions         | INFO     | Training LogisticRegression on 18,160 samples
+2025-10-30 18:39:25 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:39:25 | steam_predictions         | INFO     | 
+2. Training Random Forest...
+2025-10-30 18:39:25 | steam_predictions         | INFO     | Training RandomForestClassifier on 18,160 samples
+2025-10-30 18:39:27 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:39:27 | steam_predictions         | INFO     | 
+3. Training XGBoost...
+2025-10-30 18:39:27 | steam_predictions         | INFO     | Training XGBClassifier on 18,160 samples
+2025-10-30 18:39:27 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:39:27 | steam_predictions         | INFO     | 
+4. Training SVM...
+2025-10-30 18:39:27 | steam_predictions         | INFO     | Training SVC on 18,160 samples
+2025-10-30 18:39:49 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:39:49 | steam_predictions         | INFO     | 
+5. Training default model...
+2025-10-30 18:39:49 | steam_predictions         | INFO     | Training LogisticRegression on 18,160 samples
+2025-10-30 18:39:49 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:39:49 | steam_predictions         | INFO     | ============================================================
+2025-10-30 18:39:49 | steam_predictions         | INFO     | All models trained successfully
+2025-10-30 18:39:49 | steam_predictions         | INFO     | ============================================================
+2025-10-30 18:39:49 | steam_predictions         | INFO     | Comparing 5 models
+2025-10-30 18:39:49 | steam_predictions         | INFO     | Training LogisticRegression on 18,160 samples
+2025-10-30 18:39:49 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:39:49 | steam_predictions         | INFO     | Logistic Regression: Accuracy=0.7460, AUC-ROC=0.7742, Time=0.16s
+2025-10-30 18:39:49 | steam_predictions         | INFO     | Training RandomForestClassifier on 18,160 samples
+2025-10-30 18:39:50 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:39:50 | steam_predictions         | INFO     | Random Forest: Accuracy=0.7608, AUC-ROC=0.7973, Time=1.31s
+2025-10-30 18:39:50 | steam_predictions         | INFO     | Training XGBClassifier on 18,160 samples
+2025-10-30 18:39:51 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:39:51 | steam_predictions         | INFO     | XGBoost: Accuracy=0.7645, AUC-ROC=0.8124, Time=0.28s
+2025-10-30 18:39:51 | steam_predictions         | INFO     | Training GradientBoostingClassifier on 18,160 samples
+2025-10-30 18:39:52 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:39:52 | steam_predictions         | INFO     | Gradient Boosting: Accuracy=0.7802, AUC-ROC=0.8222, Time=1.38s
+2025-10-30 18:39:52 | steam_predictions         | INFO     | Training SVC on 18,160 samples
+2025-10-30 18:40:14 | steam_predictions         | INFO     | Training complete
+2025-10-30 18:40:17 | steam_predictions         | INFO     | SVM: Accuracy=0.7729, AUC-ROC=0.7962, Time=21.58s
+2025-10-30 18:40:17 | steam_predictions         | INFO     | Best model: Gradient Boosting with accuracy 0.7802
+2025-10-30 18:40:17 | steam_predictions         | INFO     | Generating DICE counterfactuals
+2025-10-30 18:40:17 | steam_predictions         | INFO     | Generated 2 counterfactuals
+2025-10-30 18:40:17 | steam_predictions         | INFO     | Generating anchor explanation
+2025-10-30 18:40:18 | steam_predictions         | INFO     | Anchor found with precision 100.0%
