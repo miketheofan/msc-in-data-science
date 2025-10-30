@@ -471,3 +471,94 @@ Training multiple model variants...
 2025-10-30 18:40:17 | steam_predictions         | INFO     | Generated 2 counterfactuals
 2025-10-30 18:40:17 | steam_predictions         | INFO     | Generating anchor explanation
 2025-10-30 18:40:18 | steam_predictions         | INFO     | Anchor found with precision 100.0%
+2025-10-30 19:36:20 | steam_predictions         | INFO     | Generating DICE counterfactuals
+2025-10-30 19:36:20 | steam_predictions         | INFO     | Generated 0 actionable counterfactuals
+2025-10-30 19:36:20 | steam_predictions         | INFO     | Generating anchor explanation
+2025-10-30 19:36:20 | steam_predictions         | INFO     | Anchor found with precision 98.0%
+2025-10-30 19:38:57 | steam_predictions         | INFO     | Generating DICE counterfactuals
+2025-10-30 19:38:57 | steam_predictions         | INFO     | Generated 2 counterfactuals
+2025-10-30 19:38:57 | steam_predictions         | INFO     | Generating anchor explanation
+2025-10-30 19:38:58 | steam_predictions         | INFO     | Anchor found with precision 97.0%
+2025-10-30 19:46:13 | steam_predictions         | INFO     | Loading data from steam_reviews.csv
+2025-10-30 19:46:13 | steam_predictions         | INFO     | Loaded 22,700 reviews with 33 columns
+2025-10-30 19:46:17 | steam_predictions         | INFO     | Starting feature engineering
+2025-10-30 19:46:17 | steam_predictions         | INFO     | Feature engineering complete. Shape: (22700, 12)
+2025-10-30 19:46:21 | steam_predictions         | INFO     | ============================================================
+2025-10-30 19:46:21 | steam_predictions         | INFO     | Starting Model Training Phase
+2025-10-30 19:46:21 | steam_predictions         | INFO     | ============================================================
+2025-10-30 19:46:21 | steam_predictions         | INFO     | Preparing train-test split
+2025-10-30 19:46:21 | steam_predictions         | INFO     | Training set: 18,160 samples
+2025-10-30 19:46:21 | steam_predictions         | INFO     | Test set: 4,540 samples
+2025-10-30 19:46:21 | steam_predictions         | INFO     | Class distribution (train): Positive=12,477 (68.71%), Negative=5,683 (31.29%)
+2025-10-30 19:46:21 | steam_predictions         | INFO     | Training multiple model variants...
+2025-10-30 19:46:21 | steam_predictions         | INFO     | 
+1. Training Logistic Regression...
+2025-10-30 19:46:21 | steam_predictions         | INFO     | Training LogisticRegression on 18,160 samples
+2025-10-30 19:46:21 | steam_predictions         | INFO     | Training complete
+2025-10-30 19:46:21 | steam_predictions         | INFO     | 
+2. Training Random Forest...
+2025-10-30 19:46:21 | steam_predictions         | INFO     | Training RandomForestClassifier on 18,160 samples
+2025-10-30 19:46:22 | steam_predictions         | INFO     | Training complete
+2025-10-30 19:46:22 | steam_predictions         | INFO     | 
+3. Training XGBoost...
+2025-10-30 19:46:22 | steam_predictions         | INFO     | Training XGBClassifier on 18,160 samples
+2025-10-30 19:46:22 | steam_predictions         | INFO     | Training complete
+2025-10-30 19:46:22 | steam_predictions         | INFO     | 
+4. Training SVM...
+2025-10-30 19:46:22 | steam_predictions         | INFO     | Training SVC on 18,160 samples
+2025-10-30 19:46:51 | steam_predictions         | INFO     | Training complete
+2025-10-30 19:46:51 | steam_predictions         | INFO     | 
+5. Training default model...
+2025-10-30 19:46:51 | steam_predictions         | INFO     | Training LogisticRegression on 18,160 samples
+2025-10-30 19:46:51 | steam_predictions         | INFO     | Training complete
+2025-10-30 19:46:51 | steam_predictions         | INFO     | ============================================================
+2025-10-30 19:46:51 | steam_predictions         | INFO     | All models trained successfully
+2025-10-30 19:46:51 | steam_predictions         | INFO     | ============================================================
+2025-10-30 19:46:51 | steam_predictions         | INFO     | Comparing 5 models
+2025-10-30 19:46:51 | steam_predictions         | INFO     | Training LogisticRegression on 18,160 samples
+2025-10-30 19:46:51 | steam_predictions         | INFO     | Training complete
+2025-10-30 19:46:51 | steam_predictions         | INFO     | Logistic Regression: Accuracy=0.7084, AUC-ROC=0.6976, Time=0.16s
+2025-10-30 19:46:51 | steam_predictions         | INFO     | Training RandomForestClassifier on 18,160 samples
+2025-10-30 19:46:53 | steam_predictions         | INFO     | Training complete
+2025-10-30 19:46:53 | steam_predictions         | INFO     | Random Forest: Accuracy=0.7341, AUC-ROC=0.7356, Time=1.37s
+2025-10-30 19:46:53 | steam_predictions         | INFO     | Training XGBClassifier on 18,160 samples
+2025-10-30 19:46:53 | steam_predictions         | INFO     | Training complete
+2025-10-30 19:46:53 | steam_predictions         | INFO     | XGBoost: Accuracy=0.7445, AUC-ROC=0.7469, Time=0.29s
+2025-10-30 19:46:53 | steam_predictions         | INFO     | Training GradientBoostingClassifier on 18,160 samples
+2025-10-30 19:46:55 | steam_predictions         | INFO     | Training complete
+2025-10-30 19:46:55 | steam_predictions         | INFO     | Gradient Boosting: Accuracy=0.7540, AUC-ROC=0.7632, Time=1.85s
+2025-10-30 19:46:55 | steam_predictions         | INFO     | Training SVC on 18,160 samples
+2025-10-30 19:47:23 | steam_predictions         | INFO     | Training complete
+2025-10-30 19:47:28 | steam_predictions         | INFO     | SVM: Accuracy=0.7454, AUC-ROC=0.7437, Time=27.47s
+2025-10-30 19:47:28 | steam_predictions         | INFO     | Best model: Gradient Boosting with accuracy 0.7540
+2025-10-30 19:47:28 | steam_predictions         | INFO     | Generating DICE counterfactuals
+2025-10-30 19:47:28 | steam_predictions         | INFO     | Generated 1 counterfactuals
+2025-10-30 19:47:28 | steam_predictions         | INFO     | Generating anchor explanation
+2025-10-30 19:47:29 | steam_predictions         | INFO     | Anchor found with precision 100.0%
+2025-10-30 20:45:32 | steam_predictions         | INFO     | Loading data from steam_reviews.csv
+2025-10-30 20:45:32 | steam_predictions         | INFO     | Loaded 22,700 reviews with 33 columns
+2025-10-30 20:45:34 | steam_predictions         | INFO     | Starting feature engineering
+2025-10-30 20:45:34 | steam_predictions         | INFO     | Feature engineering complete. Shape: (22700, 12)
+2025-10-30 20:45:45 | steam_predictions         | INFO     | ============================================================
+2025-10-30 20:45:45 | steam_predictions         | INFO     | Starting Model Training Phase
+2025-10-30 20:45:45 | steam_predictions         | INFO     | ============================================================
+2025-10-30 20:45:45 | steam_predictions         | INFO     | Preparing train-test split
+2025-10-30 20:45:45 | steam_predictions         | INFO     | Training set: 18,160 samples
+2025-10-30 20:45:45 | steam_predictions         | INFO     | Test set: 4,540 samples
+2025-10-30 20:45:45 | steam_predictions         | INFO     | Class distribution (train): Positive=12,477 (68.71%), Negative=5,683 (31.29%)
+2025-10-30 20:45:45 | steam_predictions         | INFO     | Training multiple model variants...
+2025-10-30 20:45:45 | steam_predictions         | INFO     | 
+1. Training Logistic Regression...
+2025-10-30 20:45:45 | steam_predictions         | INFO     | Training LogisticRegression on 18,160 samples
+2025-10-30 20:45:45 | steam_predictions         | INFO     | Training complete
+2025-10-30 20:45:45 | steam_predictions         | INFO     | 
+2. Training Random Forest...
+2025-10-30 20:45:45 | steam_predictions         | INFO     | Training RandomForestClassifier on 18,160 samples
+2025-10-30 20:45:47 | steam_predictions         | INFO     | Training complete
+2025-10-30 20:45:47 | steam_predictions         | INFO     | 
+3. Training XGBoost...
+2025-10-30 20:45:47 | steam_predictions         | INFO     | Training XGBClassifier on 18,160 samples
+2025-10-30 20:45:47 | steam_predictions         | INFO     | Training complete
+2025-10-30 20:45:47 | steam_predictions         | INFO     | 
+4. Training SVM...
+2025-10-30 20:45:47 | steam_predictions         | INFO     | Training SVC on 18,160 samples
