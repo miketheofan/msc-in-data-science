@@ -1,0 +1,37 @@
+2025-10-30 13:07:10 | steam_predictions         | INFO     | ============================================================
+2025-10-30 13:07:10 | steam_predictions         | INFO     | Steam Game Recommendation Prediction System
+2025-10-30 13:07:10 | steam_predictions         | INFO     | Notebook initialized at 2025-10-30 13:07:10
+2025-10-30 13:07:10 | steam_predictions         | INFO     | ============================================================
+2025-10-30 13:07:51 | steam_predictions         | INFO     | Loading data from steam_reviews.csv
+2025-10-30 13:07:52 | steam_predictions         | INFO     | Loaded 50,000 reviews with 23 columns
+2025-10-30 13:10:24 | steam_predictions         | INFO     | Starting text feature engineering
+2025-10-30 13:10:24 | steam_predictions         | WARNING  | Found 188 missing review texts, filling with empty string
+2025-10-30 13:10:25 | steam_predictions         | INFO     | Computing sentiment scores (TextBlob)
+2025-10-30 13:10:28 | steam_predictions         | INFO     | Created 13 text-based features
+2025-10-30 13:11:50 | steam_predictions         | INFO     | Starting numeric and behavioral feature engineering
+2025-10-30 13:11:50 | steam_predictions         | INFO     | Extracting PUBG-specific keyword features
+2025-10-30 13:11:50 | steam_predictions         | INFO     | Created 25 numeric and behavioral features
+2025-10-30 13:11:57 | steam_predictions         | INFO     | Preparing final feature matrix
+2025-10-30 13:11:57 | steam_predictions         | INFO     | Feature summary: 32 total features
+2025-10-30 13:11:57 | steam_predictions         | INFO     | Train/test split complete
+2025-10-30 13:11:57 | steam_predictions         | INFO     |   Training: 40,000 samples × 32 features
+2025-10-30 13:11:57 | steam_predictions         | INFO     |   Testing:  10,000 samples × 32 features
+2025-10-30 13:11:57 | steam_predictions         | INFO     |   Class distribution (train): 27,866 positive (69.66%)
+2025-10-30 13:11:57 | steam_predictions         | INFO     |   Class distribution (test):  6,967 positive (69.67%)
+2025-10-30 13:26:56 | steam_predictions         | INFO     | Starting text feature engineering
+2025-10-30 13:26:56 | steam_predictions         | INFO     | Computing sentiment scores (TextBlob)
+2025-10-30 13:26:59 | steam_predictions         | INFO     | Created subset with 7 features
+2025-10-30 13:33:07 | steam_predictions         | INFO     | Loading data from steam_reviews.csv
+2025-10-30 13:33:08 | steam_predictions         | INFO     | Loaded 50,000 reviews with 33 columns
+2025-10-30 13:40:22 | steam_predictions         | INFO     | Starting text feature engineering
+2025-10-30 13:40:22 | steam_predictions         | WARNING  | Found 188 missing review texts, filling with empty string
+2025-10-30 13:40:22 | steam_predictions         | INFO     | Computing sentiment scores (TextBlob)
+2025-10-30 13:48:33 | steam_predictions         | INFO     | Starting feature engineering
+2025-10-30 13:48:33 | steam_predictions         | INFO     | Computing word_count from review_text
+2025-10-30 13:48:33 | steam_predictions         | INFO     | Computing sentiment_polarity using TextBlob
+2025-10-30 13:48:36 | steam_predictions         | INFO     | Computing log_playtime_at_review
+2025-10-30 13:48:36 | steam_predictions         | INFO     | Filled missing game_price with 0
+2025-10-30 13:48:36 | steam_predictions         | INFO     | Filled missing game_genre with 'Unknown'
+2025-10-30 13:48:36 | steam_predictions         | INFO     | Filled missing game_description with empty string
+2025-10-30 13:48:36 | steam_predictions         | INFO     | Created feature subset with 10 features
+2025-10-30 13:48:36 | steam_predictions         | INFO     | Subset shape: (50000, 10)
