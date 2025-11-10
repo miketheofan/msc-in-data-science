@@ -1,4 +1,8 @@
+# Lecture materials (not for submission)
 notebooks/
+
+# Claude Code configuration (local only)
+.claude/
 
 # Data files (large CSV from scraping)
 *.csv
