@@ -1,0 +1,16 @@
+# Secrets
+code/secrets.txt
+
+# Data files
+data/raw/*
+data/processed/*
+!data/processed/.gitkeep
+!data/raw/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
