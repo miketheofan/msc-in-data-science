@@ -14,14 +14,14 @@ project1/
 ├── project1.pdf                        # Assignment description
 ├── nodes.csv                           # Input: network nodes (words)
 ├── edges.csv                           # Input: network edges (adjacencies)
-├── analysis.ipynb                      # Main Jupyter notebook (YOUR WORK HERE)
-├── gephi_instructions.md               # Step-by-step Gephi guide
+├── analysis.ipynb                      # Main Jupyter notebook with all analysis
+├── requirements.txt                    # Python package dependencies
+├── instructions/                       # Guides and instructions
 ├── david_copperfield_network.gexf      # Generated: Export for Gephi
-├── degree_distribution.png             # Generated: Visualization
-├── network_communities.png             # Generated: Visualization
-├── ego_network.png                     # Generated: Visualization
-├── david_copperfield.gephi             # Generated: Gephi project file
-└── sigma_export/                       # Generated: Web visualization
+├── david_copperfield_network.gephi     # Generated: Gephi project file
+├── screenshots/                        # Generated: Network visualizations
+├── network/                            # Generated: Sigma.js web export
+└── report.pdf                          # Final project report
 ```
 
 ---
@@ -43,7 +43,7 @@ pip install python-louvain
 
 ### Step 2: Run the Analysis
 
-1. Open `analysis.ipynb` in Jupyter Lab/Notebook or VS Code
+1. Open [analysis.ipynb](analysis.ipynb) in Jupyter Lab/Notebook or VS Code
 2. Run all cells in order (Cell → Run All)
 3. **Important**: In Section 5 (Ego Network Analysis), choose your word:
    - Look at the suggested words printed
@@ -54,8 +54,8 @@ pip install python-louvain
 ### Step 3: Use Gephi
 
 1. Install Gephi from: https://gephi.org/users/download/
-2. Follow **ALL** steps in `gephi_instructions.md`
-3. This will take about 30 minutes
+2. Follow the instructions in the [instructions/](instructions/) folder
+3. Import the generated GEXF file and create visualizations
 
 ---
 
@@ -82,11 +82,11 @@ pip install python-louvain
 
 ---
 
-## 📝 What You Need to Submit
+## 📝 Project Deliverables
 
-### 1. Report (proj1.pdf)
+### 1. Report ([report.pdf](report.pdf))
 
-Should include:
+Includes:
 
 - **Network Statistics**:
   - Number of nodes and edges
@@ -112,24 +112,26 @@ Should include:
 
 - **Screenshots** from Gephi showing the final network
 
-### 2. Compressed Folder
+### 2. Visualizations & Files
 
-Should contain:
-- `david_copperfield.gephi` (Gephi project file)
-- `sigma_export/` folder (interactive web visualization)
+Delivered files:
+- [david_copperfield_network.gephi](david_copperfield_network.gephi) - Gephi project file
+- [network/](network/) - Sigma.js interactive web visualization
+- [screenshots/](screenshots/) - Network visualization screenshots
+- [david_copperfield_network.gexf](david_copperfield_network.gexf) - Network data in GEXF format
 
 ---
 
-## 🔍 Key Findings (Will be in Your Notebook Output)
+## 🔍 Key Findings
 
-After running the notebook, you'll see:
+The analysis reveals:
 
-- **Basic Stats**: Number of nodes, edges, diameter
-- **Top Nodes**: By degree, betweenness, PageRank
-- **Communities**: How many, what words are in each
-- **Ego Network**: Layers of connectivity around your chosen word
+- **Network Structure**: Complete graph statistics including nodes, edges, and diameter
+- **Central Nodes**: Most important words identified by degree, betweenness, and PageRank
+- **Communities**: Distinct word clusters detected using the Louvain algorithm
+- **Ego Network**: Multi-layer connectivity patterns around selected focal word
 
-All of this goes into your report!
+Detailed findings are documented in [report.pdf](report.pdf) and visualized in [screenshots/](screenshots/).
 
 ---
 
@@ -206,20 +208,18 @@ pip install python-louvain
 
 ---
 
-## ✅ Checklist Before Submission
+## ✅ Project Status
 
-- [ ] Ran entire notebook successfully
-- [ ] Chose interesting word for ego network
-- [ ] Generated all visualizations (3 PNG files)
-- [ ] Created GEXF file
-- [ ] Installed Gephi
-- [ ] Followed all Gephi instructions
-- [ ] Exported to Sigma.js
-- [ ] Tested Sigma export (opened in browser)
-- [ ] Saved Gephi project file
-- [ ] Wrote report (proj1.pdf)
-- [ ] Compressed folder with .gephi file and sigma_export/
-- [ ] Uploaded to eclass.aueb.gr
+- [x] Ran entire notebook successfully
+- [x] Chose interesting word for ego network
+- [x] Generated all visualizations
+- [x] Created GEXF file
+- [x] Completed Gephi analysis
+- [x] Exported to Sigma.js
+- [x] Saved Gephi project file
+- [x] Wrote final report
+- [x] Created all deliverables
+- [x] Project completed
 
 ---
 
@@ -236,6 +236,14 @@ By completing this project, you will:
 
 ---
 
-Good luck! 🚀
+## 📄 Files
 
-If you have questions, contact the instructor via eclass.aueb.gr
+- **[analysis.ipynb](analysis.ipynb)** - Complete network analysis notebook
+- **[report.pdf](report.pdf)** - Final written report
+- **[project1.pdf](project1.pdf)** - Original assignment description
+- **[requirements.txt](requirements.txt)** - Python dependencies
+
+---
+
+**Project Completed**: December 2025
+**Course**: INF322 - Social Network Analysis, AUEB
