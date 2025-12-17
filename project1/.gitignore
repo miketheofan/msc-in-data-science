@@ -35,6 +35,9 @@ Thumbs.db
 *.tmp
 *.log
 
+# VirtualBox files
+*.vdi
+
 # Gephi files (optional - remove if you want to track them)
 # *.gephi
 # sigma_export/
