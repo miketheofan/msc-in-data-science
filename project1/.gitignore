@@ -1,7 +1,4 @@
-# Claude-generated instruction files
-**/README.md
-**/gephi_instructions.md
-**/report_template.md
+instructions/
 
 # Python
 __pycache__/
