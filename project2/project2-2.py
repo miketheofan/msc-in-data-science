@@ -1,11 +1,3 @@
-"""
-Project 2 - Part 2: Centrality Measures & Community Detection
-AUEB M.Sc. Data Science - Social Network Analysis
-Due: December 28, 2025
-
-This script analyzes graphs using various centrality measures and community detection algorithms.
-"""
-
 import snap
 import time
 import sys
@@ -13,32 +5,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Set recursion limit for large graphs
 sys.setrecursionlimit(10000)
 
 
 def generate_watts_strogatz(num_nodes, out_degree=10, rewire_prob=0.1):
-    """
-    Generate a Watts-Strogatz small-world graph.
-
-    Args:
-        num_nodes: Number of nodes in the graph
-        out_degree: Out-degree for each node (default: 10, range [5,20])
-        rewire_prob: Rewiring probability (default: 0.1)
-
-    Returns:
-        SNAP undirected graph
-    """
     return snap.GenSmallWorld(num_nodes, out_degree, rewire_prob)
 
 
 def find_max_degree_node(graph):
-    """
-    Find the node with the highest degree.
-
-    Returns:
-        (node_id, degree): Tuple of node ID and its degree
-    """
     max_deg = -1
     max_node = -1
 
@@ -52,21 +26,13 @@ def find_max_degree_node(graph):
 
 
 def find_top_hits_nodes(graph):
-    """
-    Find nodes with highest Hub and Authority scores.
-
-    Returns:
-        (hub_node, hub_score, auth_node, auth_score): Tuple of top hub and authority info
-    """
     HubH = snap.TIntFltH()
     AuthH = snap.TIntFltH()
     snap.GetHits(graph, HubH, AuthH)
 
-    # Find max hub
     max_hub_score = max(HubH[node] for node in HubH)
     max_hub_node = [node for node in HubH if HubH[node] == max_hub_score][0]
 
-    # Find max authority
     max_auth_score = max(AuthH[node] for node in AuthH)
     max_auth_node = [node for node in AuthH if AuthH[node] == max_auth_score][0]
 
@@ -74,20 +40,9 @@ def find_top_hits_nodes(graph):
 
 
 def time_community_detection(graph, timeout=600):
-    """
-    Time the execution of community detection algorithms.
-
-    Args:
-        graph: SNAP graph
-        timeout: Maximum time allowed in seconds (default: 600 = 10 minutes)
-
-    Returns:
-        (gn_status, cnm_status): Status strings for both algorithms
-    """
     CmtyV = snap.TCnComV()
 
     # Girvan-Newman
-    print("    Running Girvan-Newman...")
     start = time.time()
     try:
         snap.CommunityGirvanNewman(graph, CmtyV)
@@ -97,35 +52,24 @@ def time_community_detection(graph, timeout=600):
         else:
             gn_status = f"{gn_time:.2f}s"
     except Exception as e:
-        gn_status = f"FAILED ({str(e)[:30]})"
+        gn_status = f"FAILED"
 
     # Clauset-Newman-Moore
-    print("    Running Clauset-Newman-Moore...")
     start = time.time()
     try:
         snap.CommunityCNM(graph, CmtyV)
         cnm_time = time.time() - start
         if cnm_time > timeout:
-            cnm_status = f"TIMEOUT ({cnm_time:.2f}s > {timeout}s)"
+            cnm_status = f"TIMEOUT ({cnm_time:.2f}s)"
         else:
             cnm_status = f"{cnm_time:.2f}s"
     except Exception as e:
-        cnm_status = f"FAILED ({str(e)[:30]})"
+        cnm_status = f"FAILED"
 
     return gn_status, cnm_status
 
 
 def analyze_top_pagerank_nodes(graph, top_n=30):
-    """
-    Analyze top-N PageRank nodes with all centrality measures.
-
-    Args:
-        graph: SNAP graph
-        top_n: Number of top nodes to analyze (default: 30)
-
-    Returns:
-        DataFrame with centrality measures for top-N nodes
-    """
     print(f"  Calculating centrality measures...")
 
     # 1. Calculate PageRank
@@ -174,7 +118,6 @@ def analyze_top_pagerank_nodes(graph, top_n=30):
 
 
 def normalize(values):
-    """Normalize values to [0, 1] range."""
     values = np.array(values)
     min_val, max_val = values.min(), values.max()
     if max_val == min_val:
@@ -183,7 +126,6 @@ def normalize(values):
 
 
 def create_plots(df_top30, output_dir="."):
-    """Create visualization plots."""
     print("\n  Creating visualization plots...")
 
     # Plot 1: Betweenness, Closeness, PageRank
@@ -234,10 +176,8 @@ def create_plots(df_top30, output_dir="."):
 
 
 def main():
-    """Main analysis function."""
-    # Parameters - Start with smaller sizes to avoid freezing
-    # You can increase these later: [50, 500, 5000, 10000]
-    sizes = [50, 500]  # Start small for testing
+    # Parameters
+    sizes = [50, 500]
     out_degree = 10
     rewire_prob = 0.1
 
@@ -318,7 +258,7 @@ def main():
     create_plots(df_top30)
 
     print(f"\n{'='*70}")
-    print("✅ ANALYSIS COMPLETE!")
+    print(" ANALYSIS COMPLETE!")
     print(f"{'='*70}")
     print("\nGenerated files:")
     print("  - plot1_centrality.png")
