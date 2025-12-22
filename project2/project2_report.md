@@ -27,9 +27,9 @@ Implemented two functions to detect Euler paths and circuits in undirected graph
 
 - No Euler path (4 odd-degree vertices, not exactly 2)
 
-**Test 3: Cycle graph (0-1-2-3-0)**
+**Test 3: Large cycle graph (1000 nodes)**
 
-- Has Euler circuit (all vertices have degree 2)
+- Has Euler circuit (all vertices have degree 2, connected in a cycle)
 
 **Test 4: Linear path (same as Test 1)**
 
