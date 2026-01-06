@@ -1,0 +1,2 @@
+[Scatter] n_days=1577
+Above diagonal: MIA worse. Below: MCO worse.

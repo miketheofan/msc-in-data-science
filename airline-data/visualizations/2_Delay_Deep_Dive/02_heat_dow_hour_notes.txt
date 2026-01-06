@@ -1,0 +1,2 @@
+[DOW×Hour] best: Wed @ 05, mean=-5.74 min
+[DOW×Hour] worst: Sat @ 00, mean=26.67 min

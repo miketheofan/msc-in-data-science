@@ -1,0 +1,5 @@
+airport_key=Dest
+fips_role=Derived(Dest)
+fips_col=DerivedCountyGEOID
+airline_col=UniqueCarrier
+min_county_flights=500

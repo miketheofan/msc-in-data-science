@@ -1,0 +1,28 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             mean_delay   R-squared:                       0.083
+Model:                            OLS   Adj. R-squared:                  0.083
+Method:                 Least Squares   F-statistic:                     390.4
+Date:                Sat, 03 Jan 2026   Prob (F-statistic):          5.94e-234
+Time:                        13:10:31   Log-Likelihood:            -2.4228e+05
+No. Observations:               54681   AIC:                         4.846e+05
+Df Residuals:                   54676   BIC:                         4.846e+05
+Df Model:                           4                                         
+Covariance Type:              cluster                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -10.5054      0.565    -18.604      0.000     -11.612      -9.399
+traffic        0.1130      0.016      6.904      0.000       0.081       0.145
+Hour           1.1550      0.033     35.365      0.000       1.091       1.219
+DOWnum         0.0708      0.126      0.560      0.575      -0.177       0.318
+Origin_MIA     4.6660      0.292     15.985      0.000       4.094       5.238
+==============================================================================
+Omnibus:                    77656.054   Durbin-Watson:                   1.118
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):        167167709.366
+Skew:                           7.692   Prob(JB):                         0.00
+Kurtosis:                     273.435   Cond. No.                         96.2
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
