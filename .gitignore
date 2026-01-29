@@ -67,3 +67,5 @@ Thumbs.db
 
 pokemon_cards/
 pokemon_tcg/
+
+*.gguf
