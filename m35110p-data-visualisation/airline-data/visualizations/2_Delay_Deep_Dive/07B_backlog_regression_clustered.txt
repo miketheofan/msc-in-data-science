@@ -1,0 +1,30 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             mean_delay   R-squared:                       0.335
+Model:                            OLS   Adj. R-squared:                  0.335
+Method:                 Least Squares   F-statistic:                     2012.
+Date:                Sat, 03 Jan 2026   Prob (F-statistic):               0.00
+Time:                        13:10:34   Log-Likelihood:            -1.9498e+05
+No. Observations:               49507   AIC:                         3.900e+05
+Df Residuals:                   49500   BIC:                         3.900e+05
+Df Model:                           6                                         
+Covariance Type:              cluster                                         
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const             -5.4866      0.303    -18.094      0.000      -6.081      -4.892
+lag_mean_delay     0.6012      0.010     62.592      0.000       0.582       0.620
+lag_x_IsMIA       -0.1416      0.011    -12.621      0.000      -0.164      -0.120
+traffic            0.1395      0.009     15.014      0.000       0.121       0.158
+Hour               0.4196      0.014     30.310      0.000       0.393       0.447
+DOWnum            -0.0083      0.049     -0.170      0.865      -0.104       0.087
+IsMIA              4.2258      0.145     29.145      0.000       3.942       4.510
+==============================================================================
+Omnibus:                    11217.041   Durbin-Watson:                   2.198
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            36223.614
+Skew:                           1.150   Prob(JB):                         0.00
+Kurtosis:                       6.503   Cond. No.                         143.
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)

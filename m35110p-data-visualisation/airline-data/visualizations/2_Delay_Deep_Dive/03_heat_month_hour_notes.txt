@@ -1,0 +1,2 @@
+[Month×Hour] best: Sep @ 05, mean=-7.63 min
+[Month×Hour] worst: Jul @ 00, mean=39.10 min

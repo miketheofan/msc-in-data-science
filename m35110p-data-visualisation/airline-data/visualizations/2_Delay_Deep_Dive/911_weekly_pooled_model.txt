@@ -1,0 +1,30 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               arr_mean   R-squared:                       0.388
+Model:                            OLS   Adj. R-squared:                  0.376
+Method:                 Least Squares   F-statistic:                     21.79
+Date:                Sat, 03 Jan 2026   Prob (F-statistic):           2.36e-21
+Time:                        13:11:05   Log-Likelihood:                -965.29
+No. Observations:                 316   AIC:                             1945.
+Df Residuals:                     309   BIC:                             1971.
+Df Model:                           6                                         
+Covariance Type:                  HAC                                         
+============================================================================================
+                               coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+Intercept                    8.6157      1.242      6.935      0.000       6.181      11.051
+C(airport)[T.MIA]            2.2170      1.190      1.862      0.063      -0.116       4.550
+t                           -0.0098      0.020     -0.498      0.619      -0.049       0.029
+post                        -8.7092      1.632     -5.336      0.000     -11.908      -5.510
+C(airport)[T.MIA]:post       1.6569      1.707      0.971      0.332      -1.688       5.002
+t_post                       0.0406      0.036      1.133      0.257      -0.030       0.111
+C(airport)[T.MIA]:t_post    -0.0321      0.042     -0.772      0.440      -0.113       0.049
+==============================================================================
+Omnibus:                       70.495   Durbin-Watson:                   1.309
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              180.439
+Skew:                           1.048   Prob(JB):                     6.58e-40
+Kurtosis:                       6.052   Cond. No.                         726.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 4 lags and without small sample correction

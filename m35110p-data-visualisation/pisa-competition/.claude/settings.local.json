@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(git restore:*)",
+      "Bash(jupyter nbconvert:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
