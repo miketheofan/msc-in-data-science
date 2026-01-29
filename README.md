@@ -161,12 +161,4 @@ For questions about these projects, contact via eclass.aueb.gr
 
 ---
 
-## Timeline
-
-- **Project 1**: Completed December 21, 2025
-- **Project 2**: Completed December 28, 2025
-- **Project 3**: Completed
-
----
-
 **Last Updated**: December 2025
