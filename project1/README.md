@@ -6,7 +6,7 @@
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project1/
@@ -26,7 +26,7 @@ project1/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Step 1: Install Required Python Packages
 
@@ -59,7 +59,7 @@ pip install python-louvain
 
 ---
 
-## 📊 What the Notebook Does
+## What the Notebook Does
 
 ### Analysis Pipeline:
 
@@ -82,7 +82,7 @@ pip install python-louvain
 
 ---
 
-## 📝 Project Deliverables
+## Project Deliverables
 
 ### 1. Report ([report.pdf](report.pdf))
 
@@ -122,7 +122,7 @@ Delivered files:
 
 ---
 
-## 🔍 Key Findings
+## Key Findings
 
 The analysis reveals:
 
@@ -135,7 +135,7 @@ Detailed findings are documented in [report.pdf](report.pdf) and visualized in [
 
 ---
 
-## ⏱️ Time Estimate
+## Time Estimate
 
 - Running notebook: **15-20 minutes**
 - Choosing and analyzing word: **10 minutes**
@@ -145,7 +145,7 @@ Detailed findings are documented in [report.pdf](report.pdf) and visualized in [
 
 ---
 
-## 💡 Tips
+## Tips
 
 ### Choosing a Word for Ego Network:
 
@@ -176,7 +176,7 @@ Communities are formed by **co-occurrence patterns**, not semantic similarity!
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "ModuleNotFoundError: No module named 'community'"
 ```bash
@@ -199,7 +199,7 @@ pip install python-louvain
 
 ---
 
-## 📚 Resources
+## Resources
 
 - **NetworkX Documentation**: https://networkx.org/documentation/stable/
 - **Gephi Tutorial**: https://gephi.org/users/quick-start/
@@ -208,7 +208,7 @@ pip install python-louvain
 
 ---
 
-## ✅ Project Status
+## Project Status
 
 - [x] Ran entire notebook successfully
 - [x] Chose interesting word for ego network
@@ -223,7 +223,7 @@ pip install python-louvain
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 By completing this project, you will:
 
@@ -236,7 +236,7 @@ By completing this project, you will:
 
 ---
 
-## 📄 Files
+## Files
 
 - **[analysis.ipynb](analysis.ipynb)** - Complete network analysis notebook
 - **[report.pdf](report.pdf)** - Final written report

@@ -7,15 +7,15 @@
 
 ---
 
-## 📚 Repository Overview
+## Repository Overview
 
 This repository contains all projects and assignments for the Social Network Analysis course. The course explores graph theory, network metrics, community detection, and visualization techniques applied to real-world networks.
 
 ---
 
-## 📂 Projects
+## Projects
 
-### Project 1: David Copperfield Word Network Analysis ✅
+### Project 1: David Copperfield Word Network Analysis
 
 **Status**: Completed
 **Due Date**: December 21, 2025
@@ -35,34 +35,60 @@ This repository contains all projects and assignments for the Social Network Ana
 - Gephi project file and web visualization
 - Network visualizations and screenshots
 
-[📖 View Project 1 Details](project1/README.md)
+[View Project 1 Details](project1/README.md)
 
 ---
 
-### Project 2: TBD
+### Project 2: SNAP Community Detection & Centrality
 
-**Status**: Pending
-**Assignment**: [project2.pdf](project2/project2.pdf)
+**Status**: Completed
+**Due Date**: December 28, 2025
+
+**Description**: Analysis of community detection algorithms and centrality measures using SNAP:
+- Euler path/circuit detection
+- Watts-Strogatz graph generation
+- Community detection (Girvan-Newman, CNM)
+- Centrality analysis (PageRank, Betweenness, HITS)
+- Scalability comparison
+
+**Key Technologies**: Python, SNAP, Pandas, Matplotlib
+
+**Deliverables**:
+- Analysis notebook ([project2.ipynb](project2/project2.ipynb))
+- Standalone scripts ([project2-1.py](project2/project2-1.py), [project2-2.py](project2/project2-2.py))
+- Final report ([project2.pdf](project2/project2.pdf))
+- Visualization plots
+
+[View Project 2 Details](project2/README.md)
 
 ---
 
-### Project 3: TBD
+### Project 3: Giraph Label Propagation
 
-**Status**: Pending
-**Assignment**: [project3.pdf](project3/project3.pdf)
+**Status**: Completed
+
+**Description**: Distributed graph processing using Apache Giraph:
+- Label propagation algorithm implementation
+- Community detection on large graphs
+- Docker deployment
+
+**Key Technologies**: Java, Apache Giraph, Hadoop
+
+[View Project 3 Details](project3/README.md)
 
 ---
 
-## 🛠️ Technologies & Tools
+## Technologies & Tools
 
-- **Python**: NetworkX, Pandas, Matplotlib, Seaborn
+- **Python**: NetworkX, SNAP, Pandas, Matplotlib, Seaborn
+- **Java**: Apache Giraph, Hadoop
 - **Visualization**: Gephi, Sigma.js
 - **Analysis**: Jupyter Notebooks
 - **Version Control**: Git
 
 ---
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 Through these projects, the following concepts are explored:
 
@@ -75,7 +101,7 @@ Through these projects, the following concepts are explored:
 
 ---
 
-## 📊 Course Topics
+## Course Topics
 
 - Graph theory fundamentals
 - Network properties and metrics
@@ -88,7 +114,7 @@ Through these projects, the following concepts are explored:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -115,23 +141,31 @@ jupyter notebook analysis.ipynb
 
 ---
 
-## 📝 Academic Integrity
+## Academic Integrity
 
 These projects are completed as part of coursework at AUEB. All work is original and follows academic integrity guidelines.
 
 ---
 
-## 📧 Contact
+## Contact
 
 For questions about these projects, contact via eclass.aueb.gr
 
 ---
 
-## 📅 Timeline
+## Timeline
 
-- **Project 1**: Due December 21, 2025 ✅
-- **Project 2**: TBD
-- **Project 3**: TBD
+- **Project 1**: Completed December 21, 2025
+- **Project 2**: Completed December 28, 2025
+- **Project 3**: Completed
+
+---
+
+## Timeline
+
+- **Project 1**: Completed December 21, 2025
+- **Project 2**: Completed December 28, 2025
+- **Project 3**: Completed
 
 ---
 
