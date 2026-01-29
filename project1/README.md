@@ -1,10 +1,12 @@
-# Project 1: David Copperfield Word Network Analysis
+# Project 1: Word Network Analysis
 
-**Course**: INF322 - Social Network Analysis
-**Due**: December 21, 2025
-**Instructor**: Katia Papakonstantinopoulou
+## Overview
 
----
+Network analysis of word co-occurrences from Charles Dickens' "David Copperfield".
+
+## Technologies
+
+Python, NetworkX, Gephi, Pandas, Matplotlib, Seaborn
 
 ## Project Structure
 
