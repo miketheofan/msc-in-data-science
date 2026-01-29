@@ -1,0 +1,9 @@
+[submodule "m35214p-social-network-analysis"]
+	path = m35214p-social-network-analysis
+	url = https://github.com/miketheofan/social-network-analysis
+[submodule "m35209p-advanced-customer-analytics"]
+	path = m35209p-advanced-customer-analytics
+	url = https://github.com/miketheofan/advanced-customer-analytics
+[submodule "m35110p-data-visualisation"]
+	path = m35110p-data-visualisation
+	url = https://github.com/miketheofan/data-visualization
