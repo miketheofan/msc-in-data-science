@@ -4,54 +4,53 @@
 
 ## Assignments
 
-### [Assignment 1: N-gram Language Models](assignment-1/)
-Bigram/trigram language models with Laplace smoothing, text generation (greedy, top-k, beam search), and POS tagging with MLPs.
+### [Assignment 1: N-gram Language Models & POS Tagging with MLP](assignment-1/)
+Bigram/trigram language models with Laplace smoothing, text generation (greedy, top-k, beam search), spelling correction, and POS tagging with MLPs.
 
 **Technologies**: Python, NLTK, NumPy, scikit-learn
 
-### [Assignment 2: Text Classification & POS Tagging with MLPs](assignment-2/)
-Text classification using MLP classifiers and Part-of-Speech tagging with MLP models using GloVe embeddings.
+### [Assignment 2: Sentiment Classification & POS Tagging with MLPs](assignment-2/)
+Sentiment classification and Part-of-Speech tagging using Multi-Layer Perceptrons with GloVe embeddings.
 
 **Technologies**: Python, TensorFlow/Keras, GloVe, scikit-learn
 
-### [Assignment 3: RNN-based Models](assignment-3/)
-Text classification and POS tagging using Recurrent Neural Networks with character-level embeddings.
+### [Assignment 3: Sentiment Classification & POS Tagging with RNNs](assignment-3/)
+Sentiment classification with bidirectional stacked RNN and self-attention, POS tagging with bidirectional stacked RNN and character-level embeddings.
 
 **Technologies**: Python, TensorFlow/Keras, NumPy
 
-### [Assignment 4: CNN-based Models](assignment-4/)
-Text classification and POS tagging using Convolutional Neural Networks.
+### [Assignment 4: Sentiment Classification & POS Tagging with CNNs](assignment-4/)
+Text classification with CNNs using n-gram filters, residual connections, and self-attention. POS tagging with CNNs.
 
 **Technologies**: Python, TensorFlow/Keras, NumPy
 
-### [Assignment 5: Advanced Architectures](assignment-5/)
-Text classification and POS tagging using advanced deep learning architectures.
+### [Assignment 5: Sentiment Classification & POS Tagging with BERT](assignment-5/)
+Sentiment classification and POS tagging by fine-tuning pre-trained BERT models.
 
-**Technologies**: Python, TensorFlow/Keras, NumPy
+**Technologies**: Python, PyTorch, Hugging Face Transformers
 
 ## Structure
 
 ```
 text-analytics/
-├── n-gram-language-models/        # Original n-gram exercise (standalone)
-├── assignment-1/                  # N-gram LMs + POS tagging
+├── assignment-1/                  # N-gram LMs + POS tagging (MLP)
 │   ├── language-models.ipynb
 │   ├── part-of-speech.ipynb
-│   └── report.md
-├── assignment-2/                  # MLP text classification + POS tagging
+│   └── report.pdf
+├── assignment-2/                  # MLP-based models
 │   ├── text-classification.ipynb
 │   ├── part-of-speech.ipynb
-│   └── report.md
+│   └── report.docx
 ├── assignment-3/                  # RNN-based models
 │   ├── text-classification.ipynb
 │   ├── part-of-speech.ipynb
-│   └── report.md
+│   └── report.docx
 ├── assignment-4/                  # CNN-based models
 │   ├── text-classification.ipynb
 │   ├── part-of-speech.ipynb
-│   └── report.md
-└── assignment-5/                  # Advanced architectures
+│   └── report.docx
+└── assignment-5/                  # BERT fine-tuning
     ├── text-classification.ipynb
     ├── part-of-speech.ipynb
-    └── report.md
+    └── report.docx
 ```
